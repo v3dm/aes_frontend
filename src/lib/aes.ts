@@ -21,9 +21,7 @@ export type BlobFull = {
 };
 
 // ⭐ NEW: Base API URL (local or Render)
-const API_BASE =
-  import.meta.env.VITE_API_BASE_URL ||
-  "http://localhost:8000"; // fallback for local dev
+const API_BASE = "https://aes-backend-ojvn.onrender.com"; // fallback for local dev
 
 async function handleRes<T>(res: Response): Promise<T> {
   if (!res.ok) {
