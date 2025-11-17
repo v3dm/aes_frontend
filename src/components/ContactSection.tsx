@@ -6,14 +6,14 @@ export const ContactSection = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "security@aesencryptor.com",
-      link: "mailto:security@aesencryptor.com",
+      value: "vedanshstream@gmail.com",
+      link: "mailto:vedanshstream@gmail.com",
     },
     {
       icon: Github,
       title: "GitHub",
       value: "github.com/aes-encryptor",
-      link: "https://github.com",
+      link: "https://github.com/v3dm/aes_frontend",
     },
     {
       icon: Twitter,
@@ -25,7 +25,7 @@ export const ContactSection = () => {
       icon: Globe,
       title: "Website",
       value: "www.aesencryptor.com",
-      link: "https://aesencryptor.com",
+      link: "https://aes-frontend.onrender.com",
     },
   ];
 

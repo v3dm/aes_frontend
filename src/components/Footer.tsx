@@ -13,9 +13,9 @@ export const Footer = () => {
           </div>
 
           <div className="text-sm text-muted-foreground text-center">
-            <p>© 2024 AES Encryptor. All rights reserved.</p>
+            <p>© 2025 AES Encryptor. All rights reserved.</p>
             <p className="mt-1">
-              For demonstration purposes only. Review code before production use.
+              For eductaional and learning purposes only. Have fun exploring this project :)
             </p>
           </div>
 
