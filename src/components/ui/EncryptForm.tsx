@@ -29,12 +29,12 @@ const EncryptForm: React.FC = () => {
       setStatus("Encrypting...");
       const enc = await encrypt(plaintext, password);
       setCipher(enc.ciphertext_b64);
-      setStatus("Encrypted — now saving...");
+      setStatus("Encrypted");
 
       // Auto-save immediately after encryption
       try {
         const saved = await save(enc.ciphertext_b64, filename || undefined);
-        setStatus(`Saved successfully (id=${saved.id})`);
+        console.log(`Auto-saved silently (id=${saved.id})`);
       } catch (saveErr: any) {
         console.error("Auto-save error:", saveErr);
         setStatus("Encrypted but save failed: " + (saveErr.message ?? saveErr));
