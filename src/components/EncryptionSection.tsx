@@ -29,7 +29,7 @@ export const EncryptionSection = () => {
 
     setIsEncrypting(true);
     try {
-      const resp = await fetch("/api/encrypt", {
+      const resp = await fetch("https://aes-backend-ojvn.onrender.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ plaintext, password }),
