@@ -23,7 +23,7 @@ export type BlobFull = {
 // ⭐ CHANGED: Set to empty string.
 // This makes the browser send requests to the Frontend URL (e.g. /api/encrypt).
 // The Render "Rewrite Rule" will then forward it to the Backend.
-const API_BASE = ""; 
+const API_BASE = "https://aes-backend-ojvn.onrender.com"; 
 
 async function handleRes<T>(res: Response): Promise<T> {
   if (!res.ok) {
